@@ -25,4 +25,15 @@
            :min-width (em 60em)}})
 
 (defn breakpoint [t]
-  (get breakponit-defs t))
+  (let [fullt (get {:ns :not-small
+                    :m :medium
+                    :l :large}) t t]
+    (get breakponit-defs fullt)))
+
+(defn with-media [{:keys [styledefs value media]}]
+  (let [media-suffix (when aspect (str "-" (name media)))
+        nm (keyword (str value media-suffix))]
+    (if media
+      (at-media (breakpoint media)
+                [:& (get styledefs nm)])
+      [:& (get styledefs nm)])))

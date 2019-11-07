@@ -4,10 +4,10 @@
    [garden.stylesheet :refer [at-media]]
    [garden.selectors :as sel]
    [garden.units :refer [px]]
-   [tachyon-garden.styles.media-queries :refer :all]))
+   [tachyon-garden.styles.media-queries :refer [with-media]]))
 
 
-(def aspect-ratio-defs
+(def styledefs
   {:aspect-ratio
    {"height" (clojure.core/str "00"),
     "position" (clojure.core/str "relative")}
@@ -97,11 +97,10 @@
                              :height "100%"
                              :z-index 100}})
 
-(defn aspect-ratio [{:keys [media aspect]}]
-  (let [nm (keyword (str "aspect-ratio--"
-                         (name aspect) "-" (name media)))]
-    (get aspect-ratio-defs nm)))
+(defn aspect-ratio [{:keys [media value] :as params}]
+  (with-media (merge params
+                     {:value (str "aspect-ratio--" (name value))})))
 
-(defn aspect-ratio-object [{:keys [media]}]
-  (let [nm (keyword (str "aspect-ratio--object-" (name media)))]
-    (get aspect-ratio-defs nm)))
+(defn aspect-ratio-object [{:keys [media] :as params}]
+  (with-media (merge params
+                     {:value (str "aspect-ratio--object")})))
