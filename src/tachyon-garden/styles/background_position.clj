@@ -7,22 +7,20 @@
    [tachyon-garden.styles.media-queries :refer [with-media]]))
 
 (def styledefs
-  {:bg-center
-   {"background-repeat" (clojure.core/str "no-repeat"),
-    "background-position" (clojure.core/str "center" " " "center")}
-   :bg-top
-   {"background-repeat" (clojure.core/str "no-repeat"),
-    "background-position" (clojure.core/str "top" " " "center")}
-   :bg-right
-   {"background-repeat" (clojure.core/str "no-repeat"),
-    "background-position" (clojure.core/str "center" " " "right")}
-   :bg-bottom
-   {"background-repeat" (clojure.core/str "no-repeat"),
-    "background-position" (clojure.core/str "bottom" " " "center")}
-   :bg-left
-   {"background-repeat" (clojure.core/str "no-repeat"),
-    "background-position" (clojure.core/str "center" " " "left")}})
+  :outline {"outline" (clojure.core/str "1px" " " "solid")}
+  :outline-transparent {"outline" (clojure.core/str "1px" " " "solid" " " "transparent")}
+  :outline-0 {"outline" (clojure.core/str "00")}
+  :outline-ns {"outline" (clojure.core/str "1px" " " "solid")}
+  :outline-transparent-ns {"outline" (clojure.core/str "1px" " " "solid" " " "transparent")}
+  :outline-0-ns {"outline" (clojure.core/str "00")}
+  :outline-m {"outline" (clojure.core/str "1px" " " "solid")}
+  :outline-transparent-m {"outline" (clojure.core/str "1px" " " "solid" " " "transparent")}
+  :outline-0-m {"outline" (clojure.core/str "00")}
+  :outline-l {"outline" (clojure.core/str "1px" " " "solid")}
+  :outline-transparent-l {"outline" (clojure.core/str "1px" " " "solid" " " "transparent")}
+  :outline-0-l {"outline" (clojure.core/str "00")})
 
-(defn background-position [{:keys [media value] :as params}]
+(defn outline [{:keys [media value] :as params}]
   (with-media (merge params
-                     {:value (str "bg-" (name value))})))
+                     {:styledefs styledefs
+                      :value (str "outline" (when value (str "-" (name value))))})))

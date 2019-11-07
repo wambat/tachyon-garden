@@ -99,7 +99,7 @@
 
 (defn aspect-ratio [{:keys [media value] :as params}]
   (with-media (merge params
-                     {:value (str "aspect-ratio--" (name value))})))
+                     {:value (str "aspect-ratio" (when value (str "--" (name value))))})))
 
 (defn aspect-ratio-object [{:keys [media] :as params}]
   (with-media (merge params
