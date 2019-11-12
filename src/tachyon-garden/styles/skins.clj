@@ -61,7 +61,7 @@
    :washed-green     {:color (color :washed-green )}
    :washed-yellow    {:color (color :washed-yellow)}
    :washed-red       {:color (color :washed-red   )}
-   :color-inherit    {"color" (clojure.core/str "inherit")}
+   :color-inherit    {:color :inherit}
    :bg-black-90      {:background-color (color :black-90)}
    :bg-black-80      {:background-color (color :black-80)}
    :bg-black-70      {:background-color (color :black-70)}
@@ -81,7 +81,7 @@
    :bg-white-30      {:background-color (color :white-30)}
    :bg-white-20      {:background-color (color :white-20)}
    :bg-white-10      {:background-color (color :white-10)}
-   :bg-black         {:background-color (color  )}
+   :bg-black         {:background-color (color :black)}
    :bg-near-black    {:background-color (color :near-black   )}
    :bg-dark-gray     {:background-color (color :dark-gray    )}
    :bg-mid-gray      {:background-color (color :mid-gray     )}
@@ -118,4 +118,4 @@
    :bg-washed-green  {:background-color (color :washed-green )}
    :bg-washed-yellow {:background-color (color :washed-yellow)}
    :bg-washed-red    {:background-color (color :washed-red   )}
-   :bg-inherit       {"background-color" (clojure.core/str "inherit")}})
+   :bg-inherit       {:background-color :inherit}})
