@@ -3,7 +3,8 @@
    [garden.def :refer [defstyles]]
    [garden.stylesheet :refer [at-media]]
    [garden.selectors :as sel]
-   [garden.units :refer [px]]))
+   [garden.units :refer [px]]
+   [tachyon-garden.styles.color :refer [color]]))
 
 (def styledefs
   {:hover-black             [[[":hover" ":focus"] {:color (color :black)}]]
