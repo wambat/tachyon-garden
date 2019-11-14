@@ -4,6 +4,7 @@
    [garden.stylesheet :refer [at-media]]
    [garden.selectors :as sel]
    [garden.units :refer [px]]
+   [tachyon-garden.styles.color :refer [color]]
    [tachyon-garden.styles.media-queries :refer [with-media]]))
 
 (def styledefs
@@ -16,11 +17,14 @@
    :nested-copy-indent [["p+p" {"text-indent" (clojure.core/str "1em"),
                                 "margin-top" (clojure.core/str "00"),
                                 "margin-bottom" (clojure.core/str "00")}]]
-   :nested-copy-separator ["p+p" {"margin-top" (clojure.core/str "1.5em")}]
+   :nested-copy-separator [["p+p" {"margin-top" (clojure.core/str "1.5em")}]]
    :nested-img [[:img {"width" (clojure.core/str "100%"),
                        "max-width" (clojure.core/str "100%"),
                        "display" (clojure.core/str "block")}]]
-   :nested-links [[:a [{:color (color :blue)
-                        :transition "color .15s ease-in"}
-                       [[":hover" ":focus"] {:color (color :light-blue)
-                                             :transition "color .15s ease-in"}]]]]})
+   :nested-links [[">a" {:color (color :blue)
+                       :transition "color .15s ease-in"}]
+                  [">a:hover" {:color (color :light-blue)
+                              :transition "color .15s ease-in"}]
+                  [">a:focus" {:color (color :light-blue)
+                             :transition "color .15s ease-in"}]
+                  ]})
