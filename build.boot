@@ -11,6 +11,7 @@
                             [com.rpl/specter "1.1.1"]
                             [me.raynes/fs "1.4.6"]
                             [garden "1.3.9"]
+                            [com.taoensso/timbre "4.10.0"]
                             [adzerk/boot-test "RELEASE" :scope "test"]])
 
 (task-options!
