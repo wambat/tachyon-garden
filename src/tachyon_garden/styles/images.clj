@@ -5,5 +5,5 @@
    [garden.selectors :as sel]
    [garden.units :refer [px]]))
 
-(defstyles root
-  [:img {:max-width "100%"}])
+(def styledefs
+  {:img {:max-width "100%"}})

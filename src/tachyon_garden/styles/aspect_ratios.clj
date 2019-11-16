@@ -8,9 +8,8 @@
 
 
 (def styledefs
-  {:aspect-ratio
-   {"height" (clojure.core/str "00"),
-    "position" (clojure.core/str "relative")}
+  {:aspect-ratio {"height" (clojure.core/str "00"),
+                  "position" (clojure.core/str "relative")}
    :aspect-ratio--16x9 {"padding-bottom" "56.25%"}
    :aspect-ratio--9x16 {"padding-bottom" "177.77%"}
    :aspect-ratio--4x3  {"padding-bottom" "75%"}

@@ -9,7 +9,7 @@
 (def styledefs
   {:flex {"display" (clojure.core/str "flex")}
    :inline-flex {"display" (clojure.core/str "inline-flex")}
-   :flex-auto {"flex" (clojure.core/str "11" " " "11" " " "auto"),
+   :flex-auto {"flex" (clojure.core/str "1" " " "1" " " "auto"),
                "min-width" (clojure.core/str "00"),
                "min-height" (clojure.core/str "00")}
    :flex-none {"flex" (clojure.core/str "none")}
@@ -42,7 +42,7 @@
    :content-around {"align-content" (clojure.core/str "space-around")}
    :content-stretch {"align-content" (clojure.core/str "stretch")}
    :order-0 {"order" (clojure.core/str "00")}
-   :order-1 {"order" (clojure.core/str "11")}
+   :order-1 {"order" (clojure.core/str "1")}
    :order-2 {"order" (clojure.core/str "22")}
    :order-3 {"order" (clojure.core/str "33")}
    :order-4 {"order" (clojure.core/str "44")}
@@ -52,13 +52,13 @@
    :order-8 {"order" (clojure.core/str "88")}
    :order-last {"order" (clojure.core/str "9999999999")}
    :flex-grow-0 {"flex-grow" (clojure.core/str "00")}
-   :flex-grow-1 {"flex-grow" (clojure.core/str "11")}
+   :flex-grow-1 {"flex-grow" (clojure.core/str "1")}
    :flex-shrink-0 {"flex-shrink" (clojure.core/str "00")}
-   :flex-shrink-1 {"flex-shrink" (clojure.core/str "11")}
+   :flex-shrink-1 {"flex-shrink" (clojure.core/str "1")}
 
    :flex-ns {"display" (clojure.core/str "flex")}
    :inline-flex-ns {"display" (clojure.core/str "inline-flex")}
-   :flex-auto-ns {"flex" (clojure.core/str "11" " " "11" " " "auto"),
+   :flex-auto-ns {"flex" (clojure.core/str "1" " " "1" " " "auto"),
                   "min-width" (clojure.core/str "00"),
                   "min-height" (clojure.core/str "00")}
    :flex-none-ns {"flex" (clojure.core/str "none")}
@@ -90,24 +90,24 @@
    :content-between-ns {"align-content" (clojure.core/str "space-between")}
    :content-around-ns {"align-content" (clojure.core/str "space-around")}
    :content-stretch-ns {"align-content" (clojure.core/str "stretch")}
-   :order-0-ns {"order" (clojure.core/str "00")}
-   :order-1-ns {"order" (clojure.core/str "11")}
-   :order-2-ns {"order" (clojure.core/str "22")}
-   :order-3-ns {"order" (clojure.core/str "33")}
-   :order-4-ns {"order" (clojure.core/str "44")}
-   :order-5-ns {"order" (clojure.core/str "55")}
-   :order-6-ns {"order" (clojure.core/str "66")}
-   :order-7-ns {"order" (clojure.core/str "77")}
-   :order-8-ns {"order" (clojure.core/str "88")}
-   :order-last-ns {"order" (clojure.core/str "9999999999")}
-   :flex-grow-0-ns {"flex-grow" (clojure.core/str "00")}
-   :flex-grow-1-ns {"flex-grow" (clojure.core/str "11")}
-   :flex-shrink-0-ns {"flex-shrink" (clojure.core/str "00")}
-   :flex-shrink-1-ns {"flex-shrink" (clojure.core/str "11")}
+   :order-0-ns {"order" (clojure.core/str "0")}
+   :order-1-ns {"order" (clojure.core/str "1")}
+   :order-2-ns {"order" (clojure.core/str "2")}
+   :order-3-ns {"order" (clojure.core/str "3")}
+   :order-4-ns {"order" (clojure.core/str "4")}
+   :order-5-ns {"order" (clojure.core/str "5")}
+   :order-6-ns {"order" (clojure.core/str "6")}
+   :order-7-ns {"order" (clojure.core/str "7")}
+   :order-8-ns {"order" (clojure.core/str "8")}
+   :order-last-ns {"order" (clojure.core/str "99999")}
+   :flex-grow-0-ns {"flex-grow" (clojure.core/str "0")}
+   :flex-grow-1-ns {"flex-grow" (clojure.core/str "1")}
+   :flex-shrink-0-ns {"flex-shrink" (clojure.core/str "0")}
+   :flex-shrink-1-ns {"flex-shrink" (clojure.core/str "1")}
 
    :flex-m {"display" (clojure.core/str "flex")}
    :inline-flex-m {"display" (clojure.core/str "inline-flex")}
-   :flex-auto-m {"flex" (clojure.core/str "11" " " "11" " " "auto"),
+   :flex-auto-m {"flex" (clojure.core/str "1" " " "1" " " "auto"),
                  "min-width" (clojure.core/str "00"),
                  "min-height" (clojure.core/str "00")}
    :flex-none-m {"flex" (clojure.core/str "none")}
@@ -139,24 +139,24 @@
    :content-between-m {"align-content" (clojure.core/str "space-between")}
    :content-around-m {"align-content" (clojure.core/str "space-around")}
    :content-stretch-m {"align-content" (clojure.core/str "stretch")}
-   :order-0-m {"order" (clojure.core/str "00")}
-   :order-1-m {"order" (clojure.core/str "11")}
-   :order-2-m {"order" (clojure.core/str "22")}
-   :order-3-m {"order" (clojure.core/str "33")}
-   :order-4-m {"order" (clojure.core/str "44")}
-   :order-5-m {"order" (clojure.core/str "55")}
-   :order-6-m {"order" (clojure.core/str "66")}
-   :order-7-m {"order" (clojure.core/str "77")}
-   :order-8-m {"order" (clojure.core/str "88")}
-   :order-last-m {"order" (clojure.core/str "9999999999")}
-   :flex-grow-0-m {"flex-grow" (clojure.core/str "00")}
-   :flex-grow-1-m {"flex-grow" (clojure.core/str "11")}
-   :flex-shrink-0-m {"flex-shrink" (clojure.core/str "00")}
-   :flex-shrink-1-m {"flex-shrink" (clojure.core/str "11")}
+   :order-0-m {"order" (clojure.core/str "0")}
+   :order-1-m {"order" (clojure.core/str "1")}
+   :order-2-m {"order" (clojure.core/str "2")}
+   :order-3-m {"order" (clojure.core/str "3")}
+   :order-4-m {"order" (clojure.core/str "4")}
+   :order-5-m {"order" (clojure.core/str "5")}
+   :order-6-m {"order" (clojure.core/str "6")}
+   :order-7-m {"order" (clojure.core/str "7")}
+   :order-8-m {"order" (clojure.core/str "8")}
+   :order-last-m {"order" (clojure.core/str "99999")}
+   :flex-grow-0-m {"flex-grow" (clojure.core/str "0")}
+   :flex-grow-1-m {"flex-grow" (clojure.core/str "1")}
+   :flex-shrink-0-m {"flex-shrink" (clojure.core/str "0")}
+   :flex-shrink-1-m {"flex-shrink" (clojure.core/str "1")}
 
    :flex-l {"display" (clojure.core/str "flex")}
    :inline-flex-l {"display" (clojure.core/str "inline-flex")}
-   :flex-auto-l {"flex" (clojure.core/str "11" " " "11" " " "auto"),
+   :flex-auto-l {"flex" (clojure.core/str "1" " " "1" " " "auto"),
                  "min-width" (clojure.core/str "00"),
                  "min-height" (clojure.core/str "00")}
    :flex-none-l {"flex" (clojure.core/str "none")}
@@ -188,20 +188,20 @@
    :content-between-l {"align-content" (clojure.core/str "space-between")}
    :content-around-l {"align-content" (clojure.core/str "space-around")}
    :content-stretch-l {"align-content" (clojure.core/str "stretch")}
-   :order-0-l {"order" (clojure.core/str "00")}
-   :order-1-l {"order" (clojure.core/str "11")}
-   :order-2-l {"order" (clojure.core/str "22")}
-   :order-3-l {"order" (clojure.core/str "33")}
-   :order-4-l {"order" (clojure.core/str "44")}
-   :order-5-l {"order" (clojure.core/str "55")}
-   :order-6-l {"order" (clojure.core/str "66")}
-   :order-7-l {"order" (clojure.core/str "77")}
-   :order-8-l {"order" (clojure.core/str "88")}
-   :order-last-l {"order" (clojure.core/str "9999999999")}
+   :order-0-l {"order" (clojure.core/str "0")}
+   :order-1-l {"order" (clojure.core/str "1")}
+   :order-2-l {"order" (clojure.core/str "2")}
+   :order-3-l {"order" (clojure.core/str "3")}
+   :order-4-l {"order" (clojure.core/str "4")}
+   :order-5-l {"order" (clojure.core/str "5")}
+   :order-6-l {"order" (clojure.core/str "6")}
+   :order-7-l {"order" (clojure.core/str "7")}
+   :order-8-l {"order" (clojure.core/str "8")}
+   :order-last-l {"order" (clojure.core/str "99999")}
    :flex-grow-0-l {"flex-grow" (clojure.core/str "00")}
-   :flex-grow-1-l {"flex-grow" (clojure.core/str "11")}
+   :flex-grow-1-l {"flex-grow" (clojure.core/str "1")}
    :flex-shrink-0-l {"flex-shrink" (clojure.core/str "00")}
-   :flex-shrink-1-l {"flex-shrink" (clojure.core/str "11")}})
+   :flex-shrink-1-l {"flex-shrink" (clojure.core/str "1")}})
 
 (defn display [{:keys [media value] :as params}]
   (with-media (merge params

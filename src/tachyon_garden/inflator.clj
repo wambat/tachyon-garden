@@ -23,14 +23,17 @@
       [n nil])))
 
 (defn expand-arr-info [cls params]
-  (info [:EAI cls params])
-  (assert (vector? params))
-  (let [[cls2 inf] params]
-    (if (vector? cls2)
-      (map #(first (expand-arr-info cls [% inf])) cls2)
-      [[(str "&" (name cls2)) inf]])))
+  ;; (assert (vector? params))
+
+  (if (map? params)
+    [[(str "&") params]]
+    (let [[cls2 inf] params]
+      (if (vector? cls2)
+        (map #(first (expand-arr-info cls [% inf])) cls2)
+        [[(str "&" (name cls2)) inf]]))))
 
 (defn expand-info [cls inf]
+  ;; (info [:EXPANDING cls inf])
   (apply concat
          (cond
            (map? inf)
@@ -42,8 +45,8 @@
 (defn inflate-style [nm inf]
   (let [[cls media] (infer-media nm)]
     (if media
-      [nm (at-media (breakpoint media)
-                    (expand-info cls inf))]
+      [nm `(at-media ~(breakpoint media)
+                     ~(vec (expand-info cls inf)))]
       [nm
        (expand-info cls inf)])))
 
@@ -52,15 +55,15 @@
          (inflate-style nm inf)) (seq s)))
 
 (defn ->def [[nm body]]
-  (info "->DEF" nm body)
+  ;; (info "->DEF" nm body)
   `(defn ~(symbol (name nm))
      []
      ~(vec body)))
 
 (defmacro ->defsigs [sigs]
-  (info [:SIGS (var-get (resolve sigs))])
+  ;; (info [:SIGS (var-get (resolve sigs))])
   (let [codes (map ->def (inflate-styles (var-get (resolve sigs))))]
-    (info [:CODES codes])
+    ;; (info [:CODES codes])
     `(do
        ~@codes)))
 

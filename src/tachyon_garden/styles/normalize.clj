@@ -1,10 +1,10 @@
 (ns tachyon-garden.styles.normalize
   (:require [garden.def :refer [defcssfn defstyles]]
-            [garden.units :as units :refer [percent px]]
+            [garden.units :as units :refer [percent px em]]
             [garden.selectors :as s]))
 
 
-(defstyles main
+(defstyles root
 
   [:html {:line-height "1.15"
           "-webkit-text-size-adjust" (percent 100)
@@ -101,7 +101,7 @@
     :padding 0}]
   ["[type=\"number\"]::-webkit-inner-spin-button"
    "[type=\"number\"]::-webkit-outer-spin-button"
-   {:height auto}]
+   {:height "auto"}]
   ["[type=\"search\"]"
    {:-webkit-appearance :textfield
     :outline-offset "-2px"}]

@@ -6,7 +6,7 @@
    [garden.units :refer [px]]
    [tachyon-garden.styles.media-queries :refer [with-media]]))
 
-(def styledefs
+(def colors
   {:black         "#000"
    :near-black    "#111"
    :dark-gray     "#333"
@@ -70,4 +70,9 @@
    :washed-red    "#ffdfdf"})
 
 (defn color [value]
-  (get styledefs value value))
+  (get colors value value))
+
+;;IN SKINS
+#_(def styledefs
+  (into {} (map (fn [[n v]]
+                  {n {:color v}}) colors)))

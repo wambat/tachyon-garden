@@ -49,5 +49,7 @@
    "input[type='tel']"
    "input[type='text']"
    "input[type='url']"
-   :.border-box
    {"box-sizing" (clojure.core/str "border-box")}])
+
+(def styledefs
+ {:border-box {"box-sizing" (clojure.core/str "border-box")}})

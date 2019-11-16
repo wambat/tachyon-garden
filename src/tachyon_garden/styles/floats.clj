@@ -7,18 +7,18 @@
    [tachyon-garden.styles.media-queries :refer [with-media]]))
 
 (def styledefs
-  {:fl    {:float :left :_display: "inline"}
-   :fr    {:float :right :_display: "inline"}
-   :fn    {:float :none}
-   :fl-ns {:float :left  :_display: "inline"}
-   :fr-ns {:float :right :_display: "inline"}
-   :fn-ns {:float :none}
-   :fl-m  {:float :left :_display: "inline"}
-   :fr-m  {:float :right :_display: "inline"}
-   :fn-m  {:float :none}
-   :fl-l  {:float :left :_display: "inline"}
-   :fr-l  {:float :right :_display: "inline"}
-   :fn-l  {:float :none}})
+  {:fl    {:float :left :_display "inline"}
+   :fr    {:float :right :_display "inline"}
+   :fnone    {:float :none}
+   :fl-ns {:float :left  :_display "inline"}
+   :fr-ns {:float :right :_display "inline"}
+   :fnone-ns {:float :none}
+   :fl-m  {:float :left :_display "inline"}
+   :fr-m  {:float :right :_display "inline"}
+   :fnone-m  {:float :none}
+   :fl-l  {:float :left :_display "inline"}
+   :fr-l  {:float :right :_display "inline"}
+   :fnone-l  {:float :none}})
 
 (defn display [{:keys [media value] :as params}]
   (with-media (merge params

@@ -6,4 +6,4 @@
    [garden.units :refer [px]]))
 
 (def styledefs
-  {:.list {:list-style-type :none}})
+  {:list {:list-style-type :none}})

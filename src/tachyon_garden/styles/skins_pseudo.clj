@@ -7,7 +7,7 @@
    [tachyon-garden.styles.color :refer [color]]))
 
 (def styledefs
-  {:hover-black             [[[":hover" ":focus"] {:color (color :black)}]]
+  {:hover-black            [[[":hover" ":focus"] {:color (color :black)}]]
    :hover-near-black       [[[":hover" ":focus"] {:color (color :near-black  )}]]
    :hover-dark-gray        [[[":hover" ":focus"] {:color (color :dark-gray   )}]]
    :hover-mid-gray         [[[":hover" ":focus"] {:color (color :mid-gray    )}]]

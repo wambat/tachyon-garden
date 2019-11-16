@@ -7,6 +7,6 @@
    [tachyon-garden.styles.media-queries :refer [with-media]]))
 
 (def styledefs
-  {:debug [[" *" { :outline "1px solid gold"}]]
-   :debug-white [[" *" {:outline "1px solid white"}]]
-   :debug-black [[" *" {:outline "1px solid black" }]]}
+  {:debug-children [[" *" { :outline "1px solid gold"}]]
+   :debug-children-white [[" *" {:outline "1px solid white"}]]
+   :debug-children-black [[" *" {:outline "1px solid black" }]]})
