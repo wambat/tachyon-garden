@@ -72,7 +72,59 @@
 
 (refer-timbre)
 
-
+(def sdefs
+  [aspect-ratios/styledefs
+   background-position/styledefs
+   background-size/styledefs
+   border-color/styledefs
+   border-radius/styledefs
+   borders/styledefs
+   border-style/styledefs
+   border-width/styledefs
+   box-shadow/styledefs
+   box-sizing/styledefs
+   clears/styledefs
+   code/styledefs
+   coordinates/styledefs
+   debug-children/styledefs
+   debug-grid/styledefs
+   display/styledefs
+   flexbox/styledefs
+   floats/styledefs
+   font-family/styledefs
+   font-style/styledefs
+   font-weight/styledefs
+   forms/styledefs
+   heights/styledefs
+   hovers/styledefs
+   images/styledefs
+   letter-spacing/styledefs
+   line-height/styledefs
+   links/styledefs
+   lists/styledefs
+   max-widths/styledefs
+   negative-margin/styledefs
+   nested/styledefs
+   opacity/styledefs
+   outlines/styledefs
+   overflow/styledefs
+   position/styledefs
+   rotations/styledefs
+   skins/styledefs
+   skins-pseudo/styledefs
+   spacing/styledefs
+   tables/styledefs
+   text-align/styledefs
+   text-decoration/styledefs
+   text-transform/styledefs
+   type-scale/styledefs
+   typography/styledefs
+   utilities/styledefs
+   vertical-align/styledefs
+   visibility/styledefs
+   white-space/styledefs
+   widths/styledefs
+   z-index/styledefs])
 
 (->defsigs aspect-ratios/styledefs)
 (->defsigs background-position/styledefs)

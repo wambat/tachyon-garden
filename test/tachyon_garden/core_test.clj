@@ -11,7 +11,7 @@
          #_(translate-stylesheet "test.problems"
                                (parse-file-tree "test/" "problems"))))))
 
-(deftest translate
+#_(deftest translate
   (testing "Translate into garden"
     (is (=
          `(ns test.problems
