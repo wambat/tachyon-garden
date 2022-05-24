@@ -182,3 +182,10 @@
 ;; (->defsigs box-sizing/styledefs)
 ;; (->defsigs aspect-ratios/styledefs)
 ;; (->defsigs nested/styledefs)
+
+(defmacro stl [& args]
+  `((juxt
+     ~@(map
+        (fn [arg]
+          (symbol (str "tachyon-garden.core/" (name arg))))
+        args))))
