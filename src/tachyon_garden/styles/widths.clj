@@ -6,11 +6,11 @@
    [garden.units :refer [px]]))
 
 (def styledefs
-  {:w1              {"width" (clojure.core/str "1" " " "rem")}
-   :w2              {"width" (clojure.core/str "2" " " "rem")}
-   :w3              {"width" (clojure.core/str "4" " " "rem")}
-   :w4              {"width" (clojure.core/str "8" " " "rem")}
-   :w5              {"width" (clojure.core/str "16" " " "rem")}
+  {:w1              {"width" (clojure.core/str "1" "rem")}
+   :w2              {"width" (clojure.core/str "2" "rem")}
+   :w3              {"width" (clojure.core/str "4" "rem")}
+   :w4              {"width" (clojure.core/str "8" "rem")}
+   :w5              {"width" (clojure.core/str "16" "rem")}
    :w-10            {"width" (clojure.core/str "10%")}
    :w-20            {"width" (clojure.core/str "20%")}
    :w-25            {"width" (clojure.core/str "25%")}
@@ -28,11 +28,11 @@
    :w-third         {"width" (clojure.core/str "calc")}
    :w-two-thirds    {"width" (clojure.core/str "calc")}
    :w-auto          {"width" (clojure.core/str "auto")}
-   :w1-ns           {"width" (clojure.core/str "1" " " "rem")}
-   :w2-ns           {"width" (clojure.core/str "2" " " "rem")}
-   :w3-ns           {"width" (clojure.core/str "4" " " "rem")}
-   :w4-ns           {"width" (clojure.core/str "8" " " "rem")}
-   :w5-ns           {"width" (clojure.core/str "16" " " "rem")}
+   :w1-ns           {"width" (clojure.core/str "1" "rem")}
+   :w2-ns           {"width" (clojure.core/str "2" "rem")}
+   :w3-ns           {"width" (clojure.core/str "4" "rem")}
+   :w4-ns           {"width" (clojure.core/str "8" "rem")}
+   :w5-ns           {"width" (clojure.core/str "16" "rem")}
    :w-10-ns         {"width" (clojure.core/str "10%")}
    :w-20-ns         {"width" (clojure.core/str "20%")}
    :w-25-ns         {"width" (clojure.core/str "25%")}
@@ -50,11 +50,11 @@
    :w-third-ns      {"width" (clojure.core/str "calc")}
    :w-two-thirds-ns {"width" (clojure.core/str "calc")}
    :w-auto-ns       {"width" (clojure.core/str "auto")}
-   :w1-m            {"width" (clojure.core/str "1" " " "rem")}
-   :w2-m            {"width" (clojure.core/str "2" " " "rem")}
-   :w3-m            {"width" (clojure.core/str "4" " " "rem")}
-   :w4-m            {"width" (clojure.core/str "8" " " "rem")}
-   :w5-m            {"width" (clojure.core/str "1616" " " "rem")}
+   :w1-m            {"width" (clojure.core/str "1" "rem")}
+   :w2-m            {"width" (clojure.core/str "2" "rem")}
+   :w3-m            {"width" (clojure.core/str "4" "rem")}
+   :w4-m            {"width" (clojure.core/str "8" "rem")}
+   :w5-m            {"width" (clojure.core/str "16" "rem")}
    :w-10-m          {"width" (clojure.core/str "10%")}
    :w-20-m          {"width" (clojure.core/str "20%")}
    :w-25-m          {"width" (clojure.core/str "25%")}
@@ -72,11 +72,11 @@
    :w-third-m       {"width" (clojure.core/str "calc")}
    :w-two-thirds-m  {"width" (clojure.core/str "calc")}
    :w-auto-m        {"width" (clojure.core/str "auto")}
-   :w1-l            {"width" (clojure.core/str "1" " " "rem")}
-   :w2-l            {"width" (clojure.core/str "2" " " "rem")}
-   :w3-l            {"width" (clojure.core/str "4" " " "rem")}
-   :w4-l            {"width" (clojure.core/str "8" " " "rem")}
-   :w5-l            {"width" (clojure.core/str "1616" " " "rem")}
+   :w1-l            {"width" (clojure.core/str "1" "rem")}
+   :w2-l            {"width" (clojure.core/str "2" "rem")}
+   :w3-l            {"width" (clojure.core/str "4" "rem")}
+   :w4-l            {"width" (clojure.core/str "8" "rem")}
+   :w5-l            {"width" (clojure.core/str "16" "rem")}
    :w-10-l          {"width" (clojure.core/str "10%")}
    :w-20-l          {"width" (clojure.core/str "20%")}
    :w-25-l          {"width" (clojure.core/str "25%")}
